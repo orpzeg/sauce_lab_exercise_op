@@ -39,7 +39,7 @@ If you do not see the expected output or receive an error stating that `python` 
     git clone https://github.com/orpzeg/sauce_lab_exercise_op.git
     ```
 
-2. Navigate to the project directory:
+2. Navigate to the project directory where SauceDemoTests.py is:
 
     ```bash
     cd path/to/SauceDemoTests
