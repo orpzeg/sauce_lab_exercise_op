@@ -8,7 +8,28 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Before running the tests, you need to have Python installed on your machine. You can download Python from [python.org](https://www.python.org/downloads/).
+Before running the tests, you need to have Python and pip installed on your machine and properly set up in your environment variables to ensure they can be recognized by your system's command line interface.
+
+You can download Python from [python.org](https://www.python.org/downloads/). The Python installer on Windows offers an option to automatically add Python to your environment variables. Ensure this option is selected during installation.
+
+### Verifying Python and pip Setup
+
+After installation, verify that Python and pip are correctly installed and accessible from your command line or terminal:
+
+1. Open your command line interface (CLI) - Command Prompt for Windows, Terminal for macOS and Linux.
+2. Type `python --version` and press Enter. You should see the Python version number.
+3. Type `pip --version` and press Enter. You should see the pip version number along with the path to your Python installation.
+
+If you do not see the expected output or receive an error stating that `python` or `pip` is not recognized, you may need to manually add Python to your environment variables:
+
+- For Windows:
+    1. Search for "Environment Variables" in your start menu and select "Edit the system environment variables".
+    2. In the System Properties window, click the "Environment Variables..." button.
+    3. In the Environment Variables window, find the "Path" variable in the "System variables" section and select it. Click "Edit...".
+    4. Click "New" and add the path to your Python installation's root directory (e.g., `C:\Python39`) and the `Scripts` directory (e.g., `C:\Python39\Scripts`).
+    5. Click "OK" on all dialogs to apply the changes.
+
+- For macOS and Linux, add Python to your PATH variable by adding a line like `export PATH="/path/to/python3.x/bin:$PATH"` to your `.bash_profile`, `.bashrc`, or equivalent shell configuration file.
 
 ### Installing
 
@@ -38,7 +59,7 @@ To run the tests, use the following command:
 python .\SauceDemoTests.py --webdriver="edge"
 ```
 
-## Results of running tests:
+## Results: 
 ```bash
 Ran 3 tests in 30.359s
 
