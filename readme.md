@@ -36,8 +36,11 @@ To run the tests, use the following command:
 
 ```bash
 python .\SauceDemoTests.py --webdriver="edge"
+```
 
+4. Results of running tests:
+```bash
 Ran 3 tests in 30.359s
 
 OK
-
+```
